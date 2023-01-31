@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap");
+body {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* gradient color */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #cc66ff, #66cc99, #ff6666, #ffffcc);
+  background-size: 300% 300%;
+  animation: color 10s ease-in-out infinite;
+}
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.neon_invite {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 11vw;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+
+.neon_invite:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.neon_invite:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fe3a80;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.click {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 6vw;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+
+.click:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.click:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fe3a80;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.click {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 6vw;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+/* 
+@media screen and (max-width: 750px){
+  h1,h2{
+
+  }
+} */
+
+.image_car {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.image_car .image {
+  flex-basis: 40%;
+}
+
+.image_car img {
+  width: 100%;
+  border-radius: 50%;
+  height: 75vh;
+}
+
+.image_car .content_lines {
+  flex-basis: 40%;
+}
+
+.content_lines h4 {
+  font-size: 25px;
+  font-style: italic;
+  font-family: fantasy;
+  color: bisque;
+  text-shadow: 0 0 20px #ff005b;
+}
+
+.content_lines h4:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.content_lines h4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #cc8db5;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.date,
+.venue {
+  margin: 2rem 3rem;
+}
+
+.date h2 {
+  font-size: 3vh;
+  color: bisque;
+  text-shadow: 0 0 20px #ff005b;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.date h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #cc8db5;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.date h2:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.venue h2 {
+  font-size: 3vh;
+  color: bisque;
+  text-shadow: 0 0 20px #ff005b;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.venue h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #cc8db5;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.venue h2:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}
+
+.end button {
+  margin: 2rem;
+  padding: 10px 20px;
+  background-color: #cc5b0b;
+  color: #000;
+  border-radius: 5px;
+  border: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .image_car {
+    flex-direction: column;
+  }
+  .date,
+  .venue {
+    margin: 0rem 2rem;
+  }
+}
